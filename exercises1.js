@@ -30,16 +30,20 @@ Exercise 1.2
 Exercise 1.3
 */
 
+function square (a) {
+    return a * a;
+}
+
 function sum_of_squares (a, b, c) {
     if (a + b > a + c && a + b > b + c) {
-        return a * b;
+        return square(a) + square(b);
     } else if (b + c > a + b && b + c > a + c ) {
-        return b * c;
+        return square(b) * square(c);
     } else {
-        return a * c;
+        return square(a) * square(c);
     }
 }
 
-sum_of_squares(4, 5, 6);
+sum_of_squares(4, 7, 2);
 
 
