@@ -30,17 +30,14 @@ Exercise 1.2
 Exercise 1.3
 */
 
-function find_two_largest_numbers (a, b, c) {
-    // const two_largest = [];
-    // if (a > b && a > c) two_largest.push(a);
-    // if (b > a && b > c) two_largest.push(b);
-    // if (c > a && c > b) two_largest.push(c);
-    return 5, 6;
-}
-
 function sum_of_squares (a, b, c) {
-    const x, y = find_two_largest_numbers(a, b, c);
-    console.log(x, y);
+    if (a + b > a + c && a + b > b + c) {
+        return a * b;
+    } else if (b + c > a + b && b + c > a + c ) {
+        return b * c;
+    } else {
+        return a * c;
+    }
 }
 
 sum_of_squares(4, 5, 6);
